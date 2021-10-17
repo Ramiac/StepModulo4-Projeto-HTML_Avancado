@@ -1,0 +1,57 @@
+@import url(./var.css);
+@media screen and (min-width: 769px) and (orientation: landscape) {
+    .sectionContainer {
+        margin: auto;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .sectionContainer {
+        margin: auto;
+        width: 90%;
+    }
+}
+
+
+/* Main Container */
+
+#Pagamento {
+    border-radius: 0.4375rem;
+    box-shadow: 0 0.3rem 1.525rem -0.375rem rgba(0, 0, 0, 0.1);
+    margin-top: 32px;
+    margin-bottom: 40px;
+    font-family: var(--mainFontFamily);
+    color: var(--primaryColor);
+}
+
+.carinhoNav {
+    margin-bottom: 32px;
+}
+
+.carinhoNav-titulo {
+    flex-grow: 1;
+}
+
+.carinhoNav-link {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-family: var(--mainFontFamily);
+    color: var(--secondaryColor);
+    font-size: 18px;
+    border-bottom: solid var(--secondaryColor) 0.8px;
+    justify-content: center;
+}
+
+.ativo {
+    color: var(--primaryColor);
+    border-color: var(--primaryColor);
+    cursor: default;
+    pointer-events: none;
+}
+
+.carinhoNav-link:hover {
+    color: var(--primaryColor);
+    border-color: var(--primaryColor);
+}

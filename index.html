@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racional Moveis - Home</title>
+
+    <!-- Thema CSS -->
+    <link rel="stylesheet" href="./CSS/theme/theme.css">
+    <!-- Carossel -->
+    <link rel="stylesheet" href="./CSS/theme/tiny-slider.css">
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="./CSS/global.css">
+    <!-- Home CSS -->
+    <link rel="stylesheet" href="./CSS/home.css">
+</head>
+
+<body>
+    <!-- Basic navbar -->
+    <header class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+
+            <!-- Brand -->
+            <a class="navbar-brand d-none d-lg-block order-lg-1" href="#">
+                <img width="154" src="./IMG/logo154x36.jpg" alt="RACIONAL moveis" />
+            </a>
+            <a class="navbar-brand d-lg-none me-2" href="#">
+                <img width="74" src="./IMG/logo154x36.jpg" alt="RACIONAL moveis" />
+            </a>
+
+            <!-- Toolbar -->
+            <div class="navbar-toolbar d-flex align-items-center order-lg-3">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-tool" href="#">
+                    <div class="navbar-tool-icon-box">
+                        <i class="ci-heart"></i>
+                    </div>
+                </a>
+                <a class="navbar-tool ms-1 me-n1" href="#">
+                    <div class="navbar-tool-icon-box">
+                        <i class="ci-user"></i>
+                    </div>
+                </a>
+                <a class="navbar-tool ms-3" href="#">
+                    <div class="navbar-tool-icon-box bg-secondary">
+                        <span class="navbar-tool-label">4</span>
+                        <i class="ci-cart"></i>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Collapsible menu -->
+            <div class="collapse navbar-collapse  order-lg-2" id="navbarCollapse">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sobre nós</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./products.html" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            Produtos
+                        </a>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item" href="./products.html#mesa">Mesa</a></li>
+                            <li><a class="dropdown-item" href="./products.html#sentar">Sentar</a></li>
+                            <li><a class="dropdown-item" href="./products.html#armario">Armário</a></li>
+                            <li><a class="dropdown-item" href="./products.html#prateleira">Prateleira</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="mainCarossel">
+            <div class="tns-carousel">
+                <div class="tns-carousel-inner" data-carousel-options='{"axis": "horizontal", "nav": false, "speed": 1300, "autoplay": true}'>
+                    <img class="imgCarossel" src="./IMG/carossel-home/1.jpg" alt="Alt text">
+                    <img class="imgCarossel" src="./IMG/carossel-home/2.jpg" alt="Alt text">
+                    <img class="imgCarossel" src="./IMG/carossel-home/3.jpg" alt="Alt text">
+                    <img class="imgCarossel" src="./IMG/carossel-home/4.jpg" alt="Alt text">
+                </div>
+            </div>
+            <div class="mainCarossel-titulo flex-container flex-column justify-content-between">
+                <div class="col-l-12">
+                    <span class="tituloCarossel">Moveis de qualidade para vida</span>
+                </div>
+                <div class="flex-container flex-row justify-content-evenly">
+                    <div class="flex-container flex-column justify-content-between">
+                        <span class="textCarossel"><i class="fas fa-minus"></i></span>
+                        <span class="textCarossel">design <br> contemporáneo</span>
+                    </div>
+                    <div class="flex-container flex-column justify-content-between">
+                        <span class="textCarossel"><i class="fas fa-minus"></i></span>
+                        <span class="textCarossel">parte da <br> natureza</span>
+                    </div>
+                    <div class="flex-container flex-column justify-content-between">
+                        <span class="textCarossel"><i class="fas fa-minus"></i></span>
+                        <span class="textCarossel">moveis <br> sob medida</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mainCarossel-subBlock flex-container flex-row justify-content-evenly">
+                <a class="image flex-container flex-column align-items-center" href="./products.html#mesa">
+                    <img src="./IMG/products/floating-top-table.jpg" alt="Mesa">
+                    <h5>Mesa</h5>
+                </a>
+                <a class="image flex-container flex-column align-items-center" href="./products.html#sentar">
+                    <img src="./IMG/products/rounded-chair.jpg" alt="Sentar">
+                    <h5>Sentar</h5>
+                </a>
+                <a class="image flex-container flex-column align-items-center" href="./products.html#armario">
+                    <img src="./IMG/products/wide-drawer.jpg" alt="Armário">
+                    <h5>Armário</h5>
+                </a>
+                <a class="image flex-container flex-column align-items-center" href="./products.html#prateleira">
+                    <img src="./IMG/products/basic-shelf.jpg" alt="Prateleira">
+                    <h5>Prateleira</h5>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+
+</body>
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- Carossel -->
+<script src="./JS/theme/tiny-slider.js"></script>
+<!-- SmoothScroll Carossel -->
+<script src="./JS/theme/smooth-scroll.js"></script>
+<!-- Theme -->
+<script src="./JS/theme/theme.js"></script>
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/be40ef5ecd.js" crossorigin="anonymous"></script>
+<!-- Main JS script -->
+<script src="./JS/main.js"></script>
+
+</html>

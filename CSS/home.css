@@ -1,0 +1,98 @@
+@import url(./home-md.css)(max-width: 768px);
+@import url(./home-lg.css)(min-width: 769px);
+@import url(./var.css);
+@media screen and (min-width: 769px) and (orientation: landscape) {
+    .sectionContainer {
+        margin: auto;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .sectionContainer {
+        margin: auto;
+        width: 90%;
+    }
+}
+
+
+/* Section mainCarossel */
+
+
+/* #mainCarossel {} */
+
+#mainCarossel {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 200px;
+}
+
+
+/* .tns-carousel-inner {} */
+
+.imgCarossel {
+    height: calc(110vh - 56px);
+    max-height: 888px;
+}
+
+.mainCarossel-titulo {
+    position: absolute;
+    z-index: 3;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 50%;
+    text-align: center;
+}
+
+.tituloCarossel {
+    font-family: var(--mainFontFamily);
+    color: white;
+    font-size: var(--tituloFontSize);
+    font-weight: bold;
+}
+
+.textCarossel {
+    font: var(--mainFontFamily);
+    text-transform: uppercase;
+    color: white;
+    line-height: 1.7em;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-shadow: rgba(0, 0, 0, 0.219) 0px 5px 15px;
+}
+
+.fa-minus {
+    transform: scale(2, 1);
+    margin-bottom: 9px;
+}
+
+.mainCarossel-subBlock {
+    position: absolute;
+    z-index: 2;
+    top: 90%;
+    left: 10%;
+    transform: translate(-10%, 0%);
+    width: 60%;
+    background-color: white;
+    padding: 20px 0 10px 0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.219) 0px 5px 15px;
+}
+
+.image {
+    width: 20%;
+    height: auto;
+}
+
+.mainCarossel-subBlock h5 {
+    font-family: var(--mainFontFamily);
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: var(--primaryColor);
+}

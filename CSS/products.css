@@ -1,0 +1,140 @@
+@import url(./var.css);
+@media screen and (min-width: 769px) and (orientation: landscape) {
+    .sectionContainer {
+        margin: auto;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .sectionContainer {
+        margin: auto;
+        width: 90%;
+    }
+}
+
+
+/* navbar de produtos */
+
+#productsNavbar {
+    gap: 30px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background-color: white;
+    height: 56px;
+    position: sticky;
+    top: 0px;
+    font-size: 16px;
+    z-index: 999;
+}
+
+#productsNavbar .navItem a {
+    font-family: var(--mainFontFamily);
+    color: var(--primaryColor);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+#productsNavbar .item a:hover,
+#productsNavbar .item a:active {
+    color: var(--secondaryColor);
+}
+
+
+/* Section de produtos */
+
+#mesa,
+#armario,
+#sentar,
+#prateleira {
+    font-family: var(--mainFontFamily);
+    color: var(--primaryColor);
+    padding-top: 56px;
+    margin-top: -56px;
+}
+
+.card {
+    width: 50%;
+    height: auto;
+}
+
+.card-body {
+    padding-bottom: 0;
+}
+
+.card-footer {
+    padding-top: 0;
+    border-top: none;
+    padding-bottom: 16px !important;
+}
+
+h2 {
+    padding: 15px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+.itemColumn {
+    gap: 30px;
+}
+
+.itemRow {
+    gap: 30px;
+}
+
+.itemBlock h5 {
+    margin-top: 15px;
+    letter-spacing: .05em;
+}
+
+.item-titulo>a {
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    transition: color 0.25s ease-in-out;
+    color: var(--primaryColor);
+    text-decoration: none;
+}
+
+.item-titulo:hover>a {
+    color: var(--secondaryColor);
+}
+
+.item-texto {
+    color: var(--secondaryColor);
+    font-size: 13px;
+}
+
+.form-option-label {
+    border-color: var(--secondaryColor);
+    color: var(--secondaryColor);
+}
+
+.form-check-input:checked~.form-option-label {
+    border-color: var(--primaryColor);
+    color: var(--primaryColor);
+}
+
+.form-option-label:hover {
+    border-color: #b9c3cc;
+    color: var(--primaryColor);
+}
+
+
+/* Modal */
+
+.carousel-item {
+    height: auto;
+}
+
+.carousel-indicators {
+    margin-bottom: .3em;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 30%;
+    height: auto;
+}
