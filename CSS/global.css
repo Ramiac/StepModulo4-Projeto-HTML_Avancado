@@ -151,3 +151,34 @@
 
 
 /* Footer */
+
+footer {
+    margin-top: 25px;
+    padding-bottom: 15px;
+    background-color: var(--primaryColor);
+    padding-left: 80px;
+}
+
+footer h4,
+footer h6 {
+    font-family: var(--mainFontFamily);
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    color: var(--secondaryColor);
+    margin: 0;
+}
+
+.footer-baixo {
+    margin-top: 20px;
+    color: var(--secondaryColor);
+    font-size: 12px;
+}
+
+.footer-baixo hr {
+    color: var(--secondaryColor);
+    margin-bottom: 10px;
+}
+
+.footer-baixo p {
+    margin-bottom: 0;
+}

@@ -122,3 +122,25 @@
     color: var(--primaryColor);
     margin: 40px 0 20px 0;
 }
+
+.contato-blocos {
+    border: 1px solid var(--secondaryColor);
+    border-radius: 10px;
+    width: 20%;
+}
+
+#contato i {
+    font-size: 30px;
+    color: var(--secondaryColor);
+    margin: 16px 0 24px 0;
+}
+
+#contato h4 {
+    font-size: 20px;
+    letter-spacing: .05em;
+}
+
+#contato p {
+    text-align: center;
+    font-size: 14px;
+}
