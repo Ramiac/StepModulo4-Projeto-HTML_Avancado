@@ -96,3 +96,29 @@
     margin-top: 10px;
     color: var(--primaryColor);
 }
+
+
+/* Sobre nos */
+
+#sobreNos {
+    font-family: var(--mainFontFamily);
+    color: var(--primaryColor);
+}
+
+.sobreNos-titulo {
+    font-weight: 600;
+}
+
+.sobreNos-textBloco {
+    padding: 48px;
+    color: var(--secondaryColor);
+}
+
+
+/* Contato */
+
+#contato {
+    font-family: var(--mainFontFamily);
+    color: var(--primaryColor);
+    margin: 40px 0 20px 0;
+}
