@@ -1,40 +1,90 @@
 /* Para Celular e Tablets vertical */
-.col-s-1 {width: 8.33%;}
-.col-s-2 {width: 16.66%;}
-.col-s-3 {width: 25%;}
-.col-s-4 {width: 33.33%;}
-.col-s-5 {width: 41.66%;}
-.col-s-6 {width: 50%;}
-.col-s-7 {width: 58.33%;}
-.col-s-8 {width: 66.66%;}
-.col-s-9 {width: 75%;}
-.col-s-10 {width: 83.33%;}
-.col-s-11 {width: 91.66%;}
-.col-s-12 {width: 100%;}
+
+.col-s-1 {
+    width: 8.33%;
+}
+
+.col-s-2 {
+    width: 16.66%;
+}
+
+.col-s-3 {
+    width: 25%;
+}
+
+.col-s-4 {
+    width: 33.33%;
+}
+
+.col-s-5 {
+    width: 41.66%;
+}
+
+.col-s-6 {
+    width: 50%;
+}
+
+.col-s-7 {
+    width: 58.33%;
+}
+
+.col-s-8 {
+    width: 66.66%;
+}
+
+.col-s-9 {
+    width: 75%;
+}
+
+.col-s-10 {
+    width: 83.33%;
+}
+
+.col-s-11 {
+    width: 91.66%;
+}
+
+.col-s-12 {
+    width: 100%;
+}
+
 
 /* Geral */
 
-.flex-container-s{
+.flex-container-s {
     display: flex;
 }
 
-.displayNone-s{
+.displayNone-s {
     display: none !important;
 }
 
-.flex-row-s{
+.flex-row-s {
     flex-direction: row;
 }
 
-.flex-column-s{
+.flex-column-s {
     flex-direction: column;
 }
 
+.align-items-center-s {
+    align-items: center;
+}
+
+
+/* Sections */
+
+.section-titulo {
+    font-size: 22px;
+}
+
+
 /* Divisora */
 
-#divider{
+#divider {
     margin-bottom: 30px;
 }
+
 
 /* Banner Principal */
 
@@ -46,33 +96,34 @@
     height: 150%;
 }
 
-.headLine{
+.headLine {
     width: 95%;
 }
 
-.welcomeTitulo{
+.welcomeTitulo {
     font-size: 31px;
 }
 
+
 /* Section de Ofertas */
 
-.ofertaBloco{
+.ofertaBloco {
     padding-block: 5px;
 }
 
-.iconWrapper{
+.iconWrapper {
     font-size: 60px;
     line-height: 60px;
     padding: 20px;
 }
 
-.iconWrapper:hover{
+.iconWrapper:hover {
     font-size: 60px;
     line-height: 60px;
     padding: 20px;
 }
 
-.iconMoney{
+.iconMoney {
     width: 60px !important;
 }
 
@@ -80,18 +131,29 @@
     font-size: 15px;
 }
 
-.ofertaTitulo{
+.ofertaTitulo {
     padding-top: 15px;
     font-size: 20px;
 }
 
+
 /* Footer */
 
-.footerTitulo{
+.footerTitulo {
     font-size: 27px;
 }
 
-footer{
+footer {
     padding: 20px;
 }
 
+
+/* Footer */
+
+.footer-centro {
+    text-align: center;
+}
+
+.footer-baixo {
+    text-align: center;
+}

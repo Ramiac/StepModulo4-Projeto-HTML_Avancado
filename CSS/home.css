@@ -49,7 +49,6 @@
 .tituloCarossel {
     font-family: var(--mainFontFamily);
     color: white;
-    font-size: var(--tituloFontSize);
     font-weight: bold;
 }
 
@@ -58,7 +57,6 @@
     text-transform: uppercase;
     color: white;
     line-height: 1.7em;
-    font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.2em;
     text-shadow: rgba(0, 0, 0, 0.219) 0px 5px 15px;
@@ -72,25 +70,15 @@
 .mainCarossel-subBlock {
     position: absolute;
     z-index: 2;
-    top: 90%;
-    left: 10%;
-    transform: translate(-10%, 0%);
-    width: 60%;
     background-color: white;
     padding: 20px 0 10px 0;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.219) 0px 5px 15px;
 }
 
-.image {
-    width: 20%;
-    height: auto;
-}
-
 .mainCarossel-subBlock h5 {
     font-family: var(--mainFontFamily);
     font-weight: 600;
-    font-size: 15px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     margin-top: 10px;
@@ -120,13 +108,11 @@
 #contato {
     font-family: var(--mainFontFamily);
     color: var(--primaryColor);
-    margin: 40px 0 20px 0;
 }
 
 .contato-blocos {
     border: 1px solid var(--secondaryColor);
     border-radius: 10px;
-    width: 20%;
 }
 
 #contato i {
@@ -136,11 +122,9 @@
 }
 
 #contato h4 {
-    font-size: 20px;
     letter-spacing: .05em;
 }
 
 #contato p {
     text-align: center;
-    font-size: 14px;
 }

@@ -27,7 +27,7 @@
                 <img width="154" src="./IMG/logo154x36.jpg" alt="RACIONAL moveis" />
             </a>
             <a class="navbar-brand d-lg-none me-2" href="#">
-                <img width="74" src="./IMG/logo154x36.jpg" alt="RACIONAL moveis" />
+                <img width="110" src="./IMG/logo154x36.jpg" alt="RACIONAL moveis" />
             </a>
 
             <!-- Toolbar -->
@@ -60,7 +60,7 @@
                     <li class="nav-item active"><a class="nav-link active" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#sobreNos">Sobre nós</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="./products.html" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                             Produtos
                         </a>
                         <ul class="dropdown-menu ">
@@ -81,17 +81,25 @@
         <section id="mainCarossel">
             <div class="tns-carousel">
                 <div class="tns-carousel-inner" data-carousel-options='{"axis": "horizontal", "nav": false, "speed": 1300, "autoplay": true}'>
-                    <img class="imgCarossel" src="./IMG/carossel-home/1.jpg" alt="Alt text">
-                    <img class="imgCarossel" src="./IMG/carossel-home/2.jpg" alt="Alt text">
-                    <img class="imgCarossel" src="./IMG/carossel-home/3.jpg" alt="Alt text">
-                    <img class="imgCarossel" src="./IMG/carossel-home/4.jpg" alt="Alt text">
+                    <div class="center-cropped">
+                        <img class="imgCarossel" src="./IMG/carossel-home/1.jpg" alt="Alt text">
+                    </div>
+                    <div class="center-cropped">
+                        <img class="imgCarossel" src="./IMG/carossel-home/2.jpg" alt="Alt text">
+                    </div>
+                    <div class="center-cropped">
+                        <img class="imgCarossel" src="./IMG/carossel-home/3.jpg" alt="Alt text">
+                    </div>
+                    <div class="center-cropped">
+                        <img class="imgCarossel" src="./IMG/carossel-home/4.jpg" alt="Alt text">
+                    </div>
                 </div>
             </div>
             <div class="mainCarossel-titulo flex-container flex-column justify-content-between">
                 <div class="col-l-12">
                     <span class="tituloCarossel">Moveis de qualidade para vida</span>
                 </div>
-                <div class="flex-container flex-row justify-content-evenly">
+                <div class="bloco-textCarossel flex-container flex-column-s justify-content-evenly">
                     <div class="flex-container flex-column justify-content-between">
                         <span class="textCarossel"><i class="fas fa-minus"></i></span>
                         <span class="textCarossel">design <br> contemporáneo</span>
@@ -106,7 +114,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mainCarossel-subBlock flex-container flex-row justify-content-evenly">
+            <div class="mainCarossel-subBlock flex-container justify-content-evenly align-items-center">
                 <a class="image flex-container flex-column align-items-center" href="./products.html#mesa">
                     <img src="./IMG/products/floating-top-table.jpg" alt="Mesa">
                     <h5>Mesa</h5>
@@ -127,7 +135,7 @@
         </section>
         <section id="sobreNos" class="flex-container flex-column">
             <h2 class="section-titulo">Sobre nós</h2>
-            <div class="flex-container align-items-center">
+            <div class="flex-container flex-column-s align-items-center">
                 <div class="col-l-6">
                     <img src="./IMG/sobre-nos/sobre1.jpg" alt="">
                 </div>
@@ -139,7 +147,10 @@
                     </p>
                 </div>
             </div>
-            <div class="flex-container align-items-center">
+            <div class="flex-container flex-column-s align-items-center">
+                <div class="displayNone-lg">
+                    <img src="./IMG/sobre-nos/sobre2.jpg" alt="">
+                </div>
                 <div class="sobreNos-textBloco col-l-6">
                     <h2 class="sobreNos-titulo">Patricia Kaas</h2>
                     <p class="sobreNos-texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore officia error provident doloremque reiciendis earum, eligendi assumenda quasi nobis quod amet facilis voluptate optio sint veniam. Deserunt magnam vero illo! Maiores
@@ -147,14 +158,14 @@
                         obcaecati unde numquam illum. Omnis ratione animi dolorem saepe numquam. Doloribus, possimus.
                     </p>
                 </div>
-                <div class="col-l-6">
+                <div class="col-l-6 displayNone-s">
                     <img src="./IMG/sobre-nos/sobre2.jpg" alt="">
                 </div>
             </div>
         </section>
         <section id="contato" class="flex-container flex-column">
             <h2 class="section-titulo">Contato</h2>
-            <div class="flex-container justify-content-evenly">
+            <div class="contato-bloco flex-container flex-column-s justify-content-evenly align-items-center-s">
                 <div class="contato-blocos flex-container flex-column align-items-center">
                     <i class="ci-location"></i>
                     <h4>Endereço</h4>
@@ -189,8 +200,7 @@
         </section>
     </main>
     <footer>
-
-        <div>
+        <div class="footer-centro">
             <h4>Racional Moveis</h4>
             <h6>Moveis de qualidade para vida</h6>
             <div class="widget mt-4 text-md-nowrap text-center text-md-start">
@@ -202,7 +212,7 @@
         </div>
         <div class="footer-baixo">
             <hr>
-            <p>©2012 Rami Achcar </p>
+            <p>©2021 Rami Achcar </p>
         </div>
 
     </footer>

@@ -2,6 +2,7 @@
 :root {
     --mainFontFamily: 'Nunito Sans', sans-serif;
     --tituloFontSize: 40px;
+    --tituloFontSize-md: 22px;
     --textBold: 700;
     --textSemiBold: 500;
     --primaryColor: rgb(66, 66, 66);

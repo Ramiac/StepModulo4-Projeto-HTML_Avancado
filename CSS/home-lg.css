@@ -1,0 +1,40 @@
+/* Section mainCarossel */
+
+.tituloCarossel {
+    font-size: var(--tituloFontSize);
+}
+
+.mainCarossel-subBlock {
+    top: 90%;
+    left: 10%;
+    transform: translate(-10%, 0%);
+    width: 60%;
+}
+
+.image {
+    width: 20%;
+    height: auto;
+}
+
+.mainCarossel-subBlock h5 {
+    font-size: 15px;
+}
+
+
+/* Contato */
+
+#contato {
+    margin: 40px 0 20px 0;
+}
+
+.contato-blocos {
+    width: 20%;
+}
+
+#contato h4 {
+    font-size: 20px;
+}
+
+#contato p {
+    font-size: 14px;
+}

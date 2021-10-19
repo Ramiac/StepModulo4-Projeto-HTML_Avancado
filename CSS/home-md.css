@@ -1,0 +1,62 @@
+/* Section mainCarossel */
+
+.imgCarossel {
+    object-fit: cover;
+    object-position: center;
+}
+
+.tituloCarossel {
+    font-size: 30px;
+}
+
+.textCarossel {
+    font-size: 12px !important;
+}
+
+.bloco-textCarossel {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    gap: 15px;
+}
+
+.mainCarossel-subBlock {
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.image {
+    width: 35%;
+    height: auto;
+}
+
+.mainCarossel-subBlock h5 {
+    font-size: 12px;
+}
+
+
+/* Contato */
+
+#contato {
+    margin-bottom: 20px;
+}
+
+.contato-bloco {
+    gap: 10px;
+}
+
+.contato-blocos {
+    width: 80%;
+}
+
+#contato h4 {
+    font-size: 18px;
+}
+
+#contato p {
+    font-size: 12px;
+}
