@@ -75,6 +75,10 @@
     display: none;
 }
 
+.justify-content-center-lg {
+    justify-content: center !important;
+}
+
 
 /* Divisora */
 
