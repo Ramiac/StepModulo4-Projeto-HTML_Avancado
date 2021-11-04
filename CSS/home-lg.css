@@ -11,6 +11,10 @@
     width: 60%;
 }
 
+.imgCarossel {
+    width: 100%;
+}
+
 .image {
     width: 20%;
     height: auto;

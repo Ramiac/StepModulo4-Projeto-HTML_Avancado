@@ -1,4 +1,3 @@
-/*# sourceMappingURL=/tiny-slider.js.map */
 var tns = function() {
     var t = window,
         Ai = t.requestAnimationFrame || t.webkitRequestAnimationFrame || t.mozRequestAnimationFrame || t.msRequestAnimationFrame || function(t) { return setTimeout(t, 16) },
@@ -1006,4 +1005,3 @@ var tns = function() {
     };
     return $i
 }();
-//# sourceMappingURL=../sourcemaps/tiny-slider.js.map

@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <header class="navbar navbar-expand-lg navbar-light ">
+    <header class="navbar navbar-expand-lg navbar-light">
         <div class="container">
 
             <!-- Brand -->
@@ -36,20 +36,11 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-tool" href="#">
-                    <div class="navbar-tool-icon-box">
-                        <i class="ci-heart"></i>
-                    </div>
-                </a>
-                <a class="navbar-tool ms-1 me-n1" href="#">
-                    <div class="navbar-tool-icon-box">
-                        <i class="ci-user"></i>
-                    </div>
-                </a>
+
                 <a class="navbar-tool ms-3" href="#">
                     <div class="navbar-tool-icon-box bg-secondary">
-                        <span class="navbar-tool-label">4</span>
-                        <i class="ci-cart"></i>
+                        <span id="Badge" class="navbar-tool-label">2</span>
+                        <a href="./carinho.html"><i class="ci-cart"></i></a>
                     </div>
                 </a>
             </div>
@@ -91,8 +82,8 @@
             <div class="itemColumn flex-container flex-column">
                 <div class="itemRow flex-container card-deck flex-column-s align-items-center-s">
                     <!-- Item 1 -->
-                    <div class="card product-card border">
-                        <a class="d-block" href="#quick-view" data-bs-toggle="modal"><img class="card-img-top" src="./IMG/products/floating-top-table.jpg" alt="Mesa com Top flutuente"></a>
+                    <div id="item1" class="card product-card border">
+                        <a class="d-block" href="#quick-view" data-bs-toggle="modal" onclick="paraModal('item1'), prodAdicinado.style.display = 'none';"><img class="card-img-top" src="./IMG/products/floating-top-table.jpg" alt="Mesa com Top flutuente"></a>
                         <div class="card-body pt-1">
                             <h3 class="item-titulo"><a href="#quick-view" data-bs-toggle="modal">Mesa com top
                                     flutuente</a></h3>
@@ -100,9 +91,9 @@
                             </p>
                         </div>
                         <div class="card-footer">
-                            <div class="d-flex mb-1">
+                            <div id="tamanhos" class="d-flex mb-1">
                                 <div class="form-check form-option form-check-justified mb-2">
-                                    <input class="form-check-input" type="radio" name="sizeTable1" id="st1">
+                                    <input class="form-check-input" type="radio" name="sizeTable1" id="st1" checked>
                                     <label class="form-option-label" for="st1">1800 x 850 x 730</label>
                                 </div>
                                 <div class="form-check form-option form-check-justified mb-2">
@@ -114,9 +105,9 @@
                                     <label class="form-option-label" for="lt1">2400 x 850 x 730</label>
                                 </div>
                             </div>
-                            <div class="d-flex mb-3">
+                            <div id="madeiras" class="d-flex mb-3">
                                 <div class="form-check form-option form-check-justified mb-2">
-                                    <input class="form-check-input" type="radio" name="madeiraTable1" id="carvalhoTable1">
+                                    <input class="form-check-input" type="radio" name="madeiraTable1" id="carvalhoTable1" checked>
                                     <label class="form-option-label" for="carvalhoTable1">Carvalho</label>
                                 </div>
                                 <div class="form-check form-option form-check-justified mb-2">
@@ -125,26 +116,25 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between">
-                                <div class="product-price"><span class="text-accent">R$12.99</span></div>
-                                <button class="btn button-primary btn-sm" type="button" onclick="paraCarinho()">+<i
-                                        class="ci-cart fs-base ms-1"></i></button>
+                                <div class="product-price"><span class="text-accent">R$2499.99</span></div>
+                                <button class="btn button-primary btn-sm liveToastBtn" type="button" onclick="paraCarinho('item1'); toastTrigger(); contaProduto()">+<i class="ci-cart fs-base ms-1"></i></button>
                             </div>
                         </div>
                     </div>
 
                     <!-- Item 2 -->
 
-                    <div class="card product-card border">
-                        <a class="d-block" href="#quick-view" data-bs-toggle="modal"><img class="card-img-top" src="./IMG/products/interlocking-joint-table.jpg" alt="Mesa com Top flutuente"></a>
+                    <div id="item2" class="card product-card border">
+                        <a class="d-block" href="#quick-view" data-bs-toggle="modal" onclick="paraModal('item2'), prodAdicinado.style.display = 'none';"><img class="card-img-top" src="./IMG/products/interlocking-joint-table.jpg" alt="Mesa com Top flutuente"></a>
                         <div class="card-body pt-1">
                             <h3 class="item-titulo"><a href="#quick-view" data-bs-toggle="modal">Mesa de juntas
                                     intertravadas</a></h3>
                             <p class="item-texto">O design enfatiza intencionalmente a estrutura da mesa.</p>
                         </div>
                         <div class="card-footer">
-                            <div class="d-flex mb-1">
+                            <div id="tamanhos" class="d-flex mb-1">
                                 <div class="form-check form-option form-check-justified mb-2">
-                                    <input class="form-check-input" type="radio" name="sizeTable2" id="st2">
+                                    <input class="form-check-input" type="radio" name="sizeTable2" id="st2" checked>
                                     <label class="form-option-label" for="st2">1400 x 800 x 730</label>
                                 </div>
                                 <div class="form-check form-option form-check-justified mb-2">
@@ -156,16 +146,15 @@
                                     <label class="form-option-label" for="lt2">1800 x 800 x 730</label>
                                 </div>
                             </div>
-                            <div class="d-flex mb-3">
+                            <div id="madeiras" class="d-flex mb-3">
                                 <div class="form-check form-option form-check-justified mb-2">
-                                    <input class="form-check-input" type="radio" name="madeiraTable2" id="nogueiraTable2">
+                                    <input class="form-check-input" type="radio" name="madeiraTable2" id="nogueiraTable2" checked>
                                     <label class="form-option-label" for="nogueiraTable2">Nogueira</label>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between">
-                                <div class="product-price"><span class="text-accent">R$12.99</span></div>
-                                <button class="btn button-primary btn-sm" type="button" onclick="paraCarinho()">+<i
-                                        class="ci-cart fs-base ms-1"></i></button>
+                                <div class="product-price"><span class="text-accent">R$2699.99</span></div>
+                                <button class="btn button-primary btn-sm" type="button" onclick="paraCarinho('item2'); toastTrigger(); contaProduto()">+<i class="ci-cart fs-base ms-1"></i></button>
                             </div>
                         </div>
                     </div>
@@ -173,8 +162,8 @@
                 <div class="itemRow flex-container justify-content-center">
                     <!-- Item 3 -->
 
-                    <div class="card product-card border pb-2">
-                        <a class="d-block" href="#quick-view" data-bs-toggle="modal"><img class="card-img-top" src="./IMG/products/walnut-table-with-drawers.jpg" alt="Mesa com Top flutuente"></a>
+                    <div id="item3" class="card product-card border pb-2">
+                        <a class="d-block" href="#quick-view" data-bs-toggle="modal" onclick="paraModal('item3'), prodAdicinado.style.display = 'none';"><img class="card-img-top" src="./IMG/products/walnut-table-with-drawers.jpg" alt="Mesa com Top flutuente"></a>
                         <div class="card-body pt-1 pb-2">
                             <h3 class="item-titulo"><a href="#quick-view" data-bs-toggle="modal">Mesa com
                                     gavetas</a></h3>
@@ -182,22 +171,21 @@
                             </p>
                         </div>
                         <div class="card-footer">
-                            <div class="d-flex mb-1">
+                            <div id="tamanhos" class="d-flex mb-1">
                                 <div class="form-check form-option form-check-justified mb-2">
-                                    <input class="form-check-input" type="radio" name="sizeTable3" id="st3">
+                                    <input class="form-check-input" type="radio" name="sizeTable3" id="st3" checked>
                                     <label class="form-option-label" for="st3">1600 x 600 x 730</label>
                                 </div>
                             </div>
-                            <div class="d-flex mb-3">
+                            <div id="madeiras" class="d-flex mb-3">
                                 <div class="form-check form-option form-check-justified mb-2">
-                                    <input class="form-check-input" type="radio" name="madeiraTable3" id="nogueiraTable3">
+                                    <input class="form-check-input" type="radio" name="madeiraTable3" id="nogueiraTable3" checked>
                                     <label class="form-option-label" for="nogueira3">Nogueira</label>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between">
-                                <div class="product-price"><span class="text-accent">R$12.99</span></div>
-                                <button class="btn button-primary btn-sm" type="button" onclick="paraCarinho()">+<i
-                                        class="ci-cart fs-base ms-1"></i></button>
+                                <div class="product-price"><span class="text-accent">R$4699.99</span></div>
+                                <button class="btn button-primary btn-sm" type="button" onclick="paraCarinho('item3'); toastTrigger(); contaProduto()">+<i class="ci-cart fs-base ms-1"></i></button>
                             </div>
                         </div>
                     </div>
@@ -210,9 +198,8 @@
             <div class=" itemColumn flex-container flex-column">
                 <div class="itemRow flex-container card-deck flex-column-s align-items-center-s">
                     <!-- Item 4 -->
-
-                    <div class="card product-card border pb-2">
-                        <a class="d-block" href="#quick-view" data-bs-toggle="modal"><img class="card-img-top" src="./IMG/products/rounded-chair.jpg" alt="Mesa com Top flutuente"></a>
+                    <div id="item4" class="card product-card border pb-2">
+                        <a class="d-block" href="#quick-view" data-bs-toggle="modal" onclick="paraModal('item4'), prodAdicinado.style.display = 'none';"><img class="card-img-top" src="./IMG/products/rounded-chair.jpg" alt="Mesa com Top flutuente"></a>
                         <div class="card-body pt-1">
                             <h3 class="item-titulo"><a href="#quick-view" data-bs-toggle="modal">Cadeira
                                     arondada</a></h3>
@@ -220,15 +207,15 @@
                             </p>
                         </div>
                         <div class="card-footer">
-                            <div class="d-flex mb-1">
+                            <div id="tamanhos" class="d-flex mb-1">
                                 <div class="form-check form-option form-check-justified mb-2">
-                                    <input class="form-check-input" type="radio" name="sizeChair1" id="sc1">
+                                    <input class="form-check-input" type="radio" name="sizeChair1" id="sc1" checked>
                                     <label class="form-option-label" for="sc1">480 x 520 x 800</label>
                                 </div>
                             </div>
-                            <div class="d-flex mb-3">
+                            <div id="madeiras" class="d-flex mb-3">
                                 <div class="form-check form-option form-check-justified mb-2">
-                                    <input class="form-check-input" type="radio" name="madeiraChair1" id="carvalhoChair1">
+                                    <input class="form-check-input" type="radio" name="madeiraChair1" id="carvalhoChair1" checked>
                                     <label class="form-option-label" for="carvalhoChair1">Carvalho</label>
                                 </div>
                                 <div class="form-check form-option form-check-justified mb-2">
@@ -237,40 +224,37 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-between">
-                                <div class="product-price"><span class="text-accent">R$12.99</span></div>
-                                <button class="btn button-primary btn-sm" type="button" onclick="paraCarinho()">+<i
-                                        class="ci-cart fs-base ms-1"></i></button>
+                                <div class="product-price"><span class="text-accent">R$899.99</span></div>
+                                <button class="btn button-primary btn-sm" type="button" onclick="paraCarinho('item4'); toastTrigger(); contaProduto()">+<i class="ci-cart fs-base ms-1"></i></button>
                             </div>
                         </div>
 
                     </div>
                     <!-- Item 5 -->
-
-                    <div class="card product-card border pb-2">
-                        <a class="d-block" href="#quick-view" data-bs-toggle="modal"><img class="card-img-top" src="./IMG/products/low-fabric-sofa.jpg" alt="Sofa baixo"></a>
+                    <div id="item5" class="card product-card border pb-2">
+                        <a class="d-block" href="#quick-view" data-bs-toggle="modal" onclick="paraModal('item5'), prodAdicinado.style.display = 'none';"><img class="card-img-top" src="./IMG/products/low-fabric-sofa.jpg" alt="Sofa baixo"></a>
                         <div class="card-body pt-1">
                             <h3 class="item-titulo"><a href="#quick-view" data-bs-toggle="modal">Sofa baixo</a></h3>
                             <p class="item-texto">É um sofá que dá a sensação de estar embrulhado quando se senta. A largura baixa e larga torna mais fácil para um adulto sentar-se confortavelmente. A lateral do sofá é transformada em uma mercadoria não empacotada para que
                                 o belo padrão de madeira possa ser visto claramente e as pernas sejam conectadas da maneira tradicional.</p>
                         </div>
                         <div class="card-footer">
-                            <div class="d-flex mb-1">
+                            <div id="tamanhos" class="d-flex mb-1">
                                 <div class="form-check form-option form-check-justified mb-2">
-                                    <input class="form-check-input" type="radio" name="sizeChair2" id="sc2">
+                                    <input class="form-check-input" type="radio" name="sizeChair2" id="sc2" checked>
                                     <label class="form-option-label" for="sc2">1600 x 500 x 600</label>
                                 </div>
                             </div>
-                            <div class="d-flex mb-3">
+                            <div id="madeiras" class="d-flex mb-3">
                                 <div class="form-check form-option form-check-justified mb-2">
-                                    <input class="form-check-input" type="radio" name="madeiraChair2" id="carvalhoChair2">
+                                    <input class="form-check-input" type="radio" name="madeiraChair2" id="carvalhoChair2" checked>
                                     <label class="form-option-label" for="carvalhoChair2">Carvalho</label>
                                 </div>
 
                             </div>
                             <div class="d-flex align-items-center justify-content-between">
-                                <div class="product-price"><span class="text-accent">R$12.99</span></div>
-                                <button class="btn button-primary btn-sm" type="button" onclick="paraCarinho()">+<i
-                                        class="ci-cart fs-base ms-1"></i></button>
+                                <div class="product-price"><span class="text-accent">R$3499.99</span></div>
+                                <button class="btn button-primary btn-sm" type="button" onclick="paraCarinho('item5'); toastTrigger(); contaProduto()">+<i class="ci-cart fs-base ms-1"></i></button>
                             </div>
                         </div>
                     </div>
@@ -278,9 +262,8 @@
                 </div>
                 <div class="itemRow flex-container justify-content-center">
                     <!-- Item 6 -->
-
-                    <div class="card product-card border pb-2">
-                        <a class="d-block" href="#quick-view" data-bs-toggle="modal"><img class="card-img-top" src="./IMG/products/bench-with-brasss-shelf.jpg" alt="Mesa com Top flutuente"></a>
+                    <div id="item6" class="card product-card border pb-2">
+                        <a class="d-block" href="#quick-view" data-bs-toggle="modal" onclick="paraModal('item6'), prodAdicinado.style.display = 'none';"><img class="card-img-top" src="./IMG/products/bench-with-brass-shelf.jpg" alt="Mesa com Top flutuente"></a>
                         <div class="card-body pt-1">
                             <h3 class="item-titulo"><a href="#quick-view" data-bs-toggle="modal">Banco com
                                     prateleira de latão</a></h3>
@@ -288,9 +271,9 @@
 
                         </div>
                         <div class="card-footer">
-                            <div class="d-flex mb-1">
+                            <div id="tamanhos" class="d-flex mb-1">
                                 <div class="form-check form-option form-check-justified mb-2">
-                                    <input class="form-check-input" type="radio" name="sizeChair3" id="sc3">
+                                    <input class="form-check-input" type="radio" name="sizeChair3" id="sc3" checked>
                                     <label class="form-option-label" for="sc3">1200 x 350 x 440</label>
                                 </div>
                                 <div class="form-check form-option form-check-justified mb-2">
@@ -302,9 +285,9 @@
                                     <label class="form-option-label" for="lc3">1600 x 350 x 440</label>
                                 </div>
                             </div>
-                            <div class="d-flex mb-3">
+                            <div id="madeiras" class="d-flex mb-3">
                                 <div class="form-check form-option form-check-justified mb-2">
-                                    <input class="form-check-input" type="radio" name="madeiraChair3" id="carvalhoChair3">
+                                    <input class="form-check-input" type="radio" name="madeiraChair3" id="carvalhoChair3" checked>
                                     <label class="form-option-label" for="carvalhoChair3">Carvalho</label>
                                 </div>
                                 <div class="form-check form-option form-check-justified mb-2">
@@ -314,9 +297,8 @@
 
                             </div>
                             <div class="d-flex align-items-center justify-content-between">
-                                <div class="product-price"><span class="text-accent">R$12.99</span></div>
-                                <button class="btn button-primary btn-sm" type="button" onclick="paraCarinho()">+<i
-                                        class="ci-cart fs-base ms-1"></i></button>
+                                <div class="product-price"><span class="text-accent">R$1899.99</span></div>
+                                <button class="btn button-primary btn-sm" type="button" onclick="paraCarinho('item6'); toastTrigger(); contaProduto()">+<i class="ci-cart fs-base ms-1"></i></button>
                             </div>
                         </div>
                     </div>
@@ -329,8 +311,8 @@
             <div class="itemColumn flex-container flex-column">
                 <div class="itemRow flex-container card-deck flex-column-s align-items-center-s">
                     <!-- Item 7 -->
-                    <div class="card product-card border pb-2">
-                        <a class="d-block" href="#quick-view" data-bs-toggle="modal"><img class="card-img-top" src="./IMG/products/wide-drawer.jpg" alt="Mesa com Top flutuente"></a>
+                    <div id="item7" class="card product-card border pb-2">
+                        <a class="d-block" href="#quick-view" data-bs-toggle="modal" onclick="paraModal('item7'), prodAdicinado.style.display = 'none';"><img class="card-img-top" src="./IMG/products/wide-drawer.jpg" alt="Mesa com Top flutuente"></a>
                         <div class="card-body pt-1">
                             <h3 class="item-titulo"><a href="#quick-view" data-bs-toggle="modal">Ampla Gaveta</a>
                             </h3>
@@ -338,29 +320,28 @@
                             </p>
                         </div>
                         <div class="card-footer">
-                            <div class="d-flex mb-1">
+                            <div id="tamanhos" class="d-flex mb-1">
                                 <div class="form-check form-option form-check-justified mb-2">
-                                    <input class="form-check-input" type="radio" name="sizeArma1" id="sa1">
+                                    <input class="form-check-input" type="radio" name="sizeArma1" id="sa1" checked>
                                     <label class="form-option-label" for="sa1">1380 x 450 x 850</label>
                                 </div>
                             </div>
-                            <div class="d-flex mb-3">
+                            <div id="madeiras" class="d-flex mb-3">
                                 <div class="form-check form-option form-check-justified mb-2">
-                                    <input class="form-check-input" type="radio" name="madeiraArma1" id="nogueiraArma1">
+                                    <input class="form-check-input" type="radio" name="madeiraArma1" id="nogueiraArma1" checked>
                                     <label class="form-option-label" for="nogueiraArma1">Nogueira</label>
                                 </div>
 
                             </div>
                             <div class="d-flex align-items-center justify-content-between">
-                                <div class="product-price"><span class="text-accent">R$12.99</span></div>
-                                <button class="btn button-primary btn-sm" type="button" onclick="paraCarinho()">+<i
-                                        class="ci-cart fs-base ms-1"></i></button>
+                                <div class="product-price"><span class="text-accent">R$2499.99</span></div>
+                                <button class="btn button-primary btn-sm" type="button" onclick="paraCarinho('item7'); toastTrigger(); contaProduto()">+<i class="ci-cart fs-base ms-1"></i></button>
                             </div>
                         </div>
                     </div>
                     <!-- Item 8 -->
-                    <div class="card product-card border pb-2">
-                        <a class="d-block" href="#quick-view" data-bs-toggle="modal"><img class="card-img-top" src="./IMG/products/walnut-single-drawer.jpg" alt="Mesa com Top flutuente"></a>
+                    <div id="item8" class="card product-card border pb-2">
+                        <a class="d-block" href="#quick-view" data-bs-toggle="modal" onclick="paraModal('item8'), prodAdicinado.style.display = 'none';"><img class="card-img-top" src="./IMG/products/walnut-single-drawer.jpg" alt="Mesa com Top flutuente"></a>
                         <div class="card-body pt-1">
                             <h3 class="item-titulo"><a href="#quick-view" data-bs-toggle="modal">Comoda vertical</a>
                             </h3>
@@ -369,23 +350,22 @@
 
                         </div>
                         <div class="card-footer">
-                            <div class="d-flex mb-1">
+                            <div id="tamanhos" class="d-flex mb-1">
                                 <div class="form-check form-option form-check-justified mb-2">
-                                    <input class="form-check-input" type="radio" name="sizeArma2" id="sa2">
+                                    <input class="form-check-input" type="radio" name="sizeArma2" id="sa2" checked>
                                     <label class="form-option-label" for="sa2">600 x 450 x 850</label>
                                 </div>
                             </div>
-                            <div class="d-flex mb-3">
+                            <div id="madeiras" class="d-flex mb-3">
                                 <div class="form-check form-option form-check-justified mb-2">
-                                    <input class="form-check-input" type="radio" name="madeiraArma2" id="nogueiraArma2">
+                                    <input class="form-check-input" type="radio" name="madeiraArma2" id="nogueiraArma2" checked>
                                     <label class="form-option-label" for="nogueiraArma2">Nogueira</label>
                                 </div>
 
                             </div>
                             <div class="d-flex align-items-center justify-content-between">
-                                <div class="product-price"><span class="text-accent">R$12.99</span></div>
-                                <button class="btn button-primary btn-sm" type="button" onclick="paraCarinho()">+<i
-                                        class="ci-cart fs-base ms-1"></i></button>
+                                <div class="product-price"><span class="text-accent">R$1099.99</span></div>
+                                <button class="btn button-primary btn-sm" type="button" onclick="paraCarinho('item8'); toastTrigger(); contaProduto()">+<i class="ci-cart fs-base ms-1"></i></button>
                             </div>
                         </div>
                     </div>
@@ -393,8 +373,8 @@
                 </div>
                 <div class="itemBlock flex-container flex-row justify-content-center">
                     <!-- Item 9 -->
-                    <div class="card product-card border pb-2">
-                        <a class="d-block" href="#quick-view" data-bs-toggle="modal"><img class="card-img-top" src="./IMG/products/liveEdge-walnut-TV-stand.jpg" alt="Mesa com Top flutuente"></a>
+                    <div id="item9" class="card product-card border pb-2">
+                        <a class="d-block" href="#quick-view" data-bs-toggle="modal" onclick="paraModal('item9'), prodAdicinado.style.display = 'none';"><img class="card-img-top" src="./IMG/products/liveEdge-walnut-TV-stand.jpg" alt="Mesa com Top flutuente"></a>
                         <div class="card-body pt-1">
                             <h3 class="item-titulo"><a href="#quick-view" data-bs-toggle="modal">Rack TV</a></h3>
                             <p class="item-texto">Like the original, it emphasizes the natural lines of the live edge, but the design has a more sleek feel. It is a design that covers the tree rings by working the frame at an oblique angle of 45 degrees. The inside of the
@@ -402,23 +382,22 @@
                             </p>
                         </div>
                         <div class="card-footer">
-                            <div class="d-flex mb-1">
+                            <div id="tamanhos" class="d-flex mb-1">
                                 <div class="form-check form-option form-check-justified mb-2">
-                                    <input class="form-check-input" type="radio" name="sizeArma3" id="sa3">
+                                    <input class="form-check-input" type="radio" name="sizeArma3" id="sa3" checked>
                                     <label class="form-option-label" for="sa3">2100 x 430 x 430</label>
                                 </div>
                             </div>
-                            <div class="d-flex mb-3">
+                            <div id="madeiras" class="d-flex mb-3">
                                 <div class="form-check form-option form-check-justified mb-2">
-                                    <input class="form-check-input" type="radio" name="madeiraArma3" id="nogueiraArma3">
+                                    <input class="form-check-input" type="radio" name="madeiraArma3" id="nogueiraArma3" checked>
                                     <label class="form-option-label" for="nogueiraArma3">Nogueira</label>
                                 </div>
 
                             </div>
                             <div class="d-flex align-items-center justify-content-between">
-                                <div class="product-price"><span class="text-accent">R$12.99</span></div>
-                                <button class="btn button-primary btn-sm" type="button" onclick="paraCarinho()">+<i
-                                        class="ci-cart fs-base ms-1"></i></button>
+                                <div class="product-price"><span class="text-accent">R$7399.99</span></div>
+                                <button class="btn button-primary btn-sm" type="button" onclick="paraCarinho('item9'); toastTrigger(); contaProduto()">+<i class="ci-cart fs-base ms-1"></i></button>
                             </div>
                         </div>
                     </div>
@@ -431,8 +410,8 @@
             <div class="itemColumn flex-container flex-column">
                 <div class="itemRow flex-container card-deck flex-column-s align-items-center-s">
                     <!-- Item 10 -->
-                    <div class="card product-card border pb-2">
-                        <a class="d-block" href="#quick-view" data-bs-toggle="modal"><img class="card-img-top" src="./IMG/products/basic-shelf.jpg" alt="Prateleira basica"></a>
+                    <div id="item10" class="card product-card border pb-2">
+                        <a class="d-block" href="#quick-view" data-bs-toggle="modal" onclick="paraModal('item10'), prodAdicinado.style.display = 'none';"><img class="card-img-top" src="./IMG/products/basic-shelf.jpg" alt="Prateleira basica"></a>
                         <div class="card-body pt-1">
                             <h3 class="item-titulo"><a href="#quick-view" data-bs-toggle="modal">Prateleira básica</a>
                             </h3>
@@ -440,15 +419,15 @@
                             </p>
                         </div>
                         <div class="card-footer">
-                            <div class="d-flex mb-1">
+                            <div id="tamanhos" class="d-flex mb-1">
                                 <div class="form-check form-option form-check-justified mb-2">
-                                    <input class="form-check-input" type="radio" name="sizePrata1" id="sp1">
+                                    <input class="form-check-input" type="radio" name="sizePrata1" id="sp1" checked>
                                     <label class="form-option-label" for="sp1">1200 x 300 x 1080</label>
                                 </div>
                             </div>
-                            <div class="d-flex mb-3">
+                            <div id="madeiras" class="d-flex mb-3">
                                 <div class="form-check form-option form-check-justified mb-2">
-                                    <input class="form-check-input" type="radio" name="madeiraPrata1" id="carvalhoPrata1">
+                                    <input class="form-check-input" type="radio" name="madeiraPrata1" id="carvalhoPrata1" checked>
                                     <label class="form-option-label" for="carvalhoPrata1">Carvalho</label>
                                 </div>
                                 <div class="form-check form-option form-check-justified mb-2">
@@ -458,15 +437,14 @@
 
                             </div>
                             <div class="d-flex align-items-center justify-content-between">
-                                <div class="product-price"><span class="text-accent">R$12.99</span></div>
-                                <button class="btn button-primary btn-sm" type="button" onclick="paraCarinho()">+<i
-                                        class="ci-cart fs-base ms-1"></i></button>
+                                <div class="product-price"><span class="text-accent">R$1899.99</span></div>
+                                <button class="btn button-primary btn-sm" type="button" onclick="paraCarinho('item10'); toastTrigger(); contaProduto()">+<i class="ci-cart fs-base ms-1"></i></button>
                             </div>
                         </div>
                     </div>
-                    <!-- Item 8 -->
-                    <div class="card product-card border pb-2">
-                        <a class="d-block" href="#quick-view" data-bs-toggle="modal"><img class="card-img-top" src="./IMG/products/vertical-shelf.jpg" alt="Prateleira vertical"></a>
+                    <!-- Item 11 -->
+                    <div id="item11" class="card product-card border pb-2">
+                        <a class="d-block" href="#quick-view" data-bs-toggle="modal" onclick="paraModal('item11'), prodAdicinado.style.display = 'none';"><img class="card-img-top" src="./IMG/products/vertical-shelf.jpg" alt="Prateleira vertical"></a>
                         <div class="card-body pt-1">
                             <h3 class="item-titulo"><a href="#quick-view" data-bs-toggle="modal">Prateleira vertical</a>
                             </h3>
@@ -476,23 +454,22 @@
 
                         </div>
                         <div class="card-footer">
-                            <div class="d-flex mb-1">
+                            <div id="tamanhos" class="d-flex mb-1">
                                 <div class="form-check form-option form-check-justified mb-2">
-                                    <input class="form-check-input" type="radio" name="sizePrata2" id="sp2">
+                                    <input class="form-check-input" type="radio" name="sizePrata2" id="sp2" checked>
                                     <label class="form-option-label" for="sp2">400 x 350 x 1650</label>
                                 </div>
                             </div>
-                            <div class="d-flex mb-3">
+                            <div id="madeiras" class="d-flex mb-3">
                                 <div class="form-check form-option form-check-justified mb-2">
-                                    <input class="form-check-input" type="radio" name="madeiraPrata2" id="nogueiraPrata2">
+                                    <input class="form-check-input" type="radio" name="madeiraPrata2" id="nogueiraPrata2" checked>
                                     <label class="form-option-label" for="nogueiraPrata2">Nogueira</label>
                                 </div>
 
                             </div>
                             <div class="d-flex align-items-center justify-content-between">
-                                <div class="product-price"><span class="text-accent">R$12.99</span></div>
-                                <button class="btn button-primary btn-sm" type="button" onclick="paraCarinho()">+<i
-                                        class="ci-cart fs-base ms-1"></i></button>
+                                <div class="product-price"><span class="text-accent">R$1299.99</span></div>
+                                <button class="btn button-primary btn-sm" type="button" onclick="paraCarinho('item11'); toastTrigger(); contaProduto()">+<i class="ci-cart fs-base ms-1"></i></button>
                             </div>
                         </div>
                     </div>
@@ -501,12 +478,27 @@
 
             </div>
         </section>
-        <!-- Modal compra (preparar Javascript para mudar info)-->
+
+        <!-- Toast - confirmação no Carinho -->
+
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 9999999">
+            <div id="liveToast" class="toast " role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header bg-primary text-white">
+                    <span class="fw-medium me-auto">Produto adicionado no carinho de compra</span>
+                    <button type="button" class="btn-close btn-close-white ms-2" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body text-center">
+                    <button type="button" class="btn button-primary btn-sm" onclick="location.href = './carinho.html'">Ir para Carinho</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal compra -->
         <div class="modal-quick-view modal fade" id="quick-view" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title">Mesa com top flutuente</h4>
+                        <h4 class="modal-title"></h4>
                         <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -515,66 +507,28 @@
                             <div class="col-lg-7 col-md-6 pe-lg-0">
                                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
                                     <div class="carousel-indicators">
-
-                                        <img data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" src="./IMG/products/floating-top-table/1.jpg" alt="">
-                                        <img data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-current="true" aria-label="Slide 2" src="./IMG/products/floating-top-table/2.jpg" alt="">
-                                        <img data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-current="true" aria-label="Slide 3" src="./IMG/products/floating-top-table/3.jpg" alt="">
-                                        <img data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4" src="./IMG/products/floating-top-table/4.jpg" alt="">
                                     </div>
                                     <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <div class="gallery d-block w-100" onclick="toGallery()">
-                                                <a href="./IMG/products/floating-top-table/1.jpg" class="gallery-item rounded-3" data-sub-html='<h6 class="fs-sm text-light"></h6>'>
-                                                    <img src="./IMG/products/floating-top-table/1.jpg" alt="Gallery thumbnail">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div class="gallery" onclick="toGallery()">
-                                                <a href="./IMG/products/floating-top-table/2.jpg" class="gallery-item rounded-3" data-sub-html='<h6 class="fs-sm text-light"></h6>'>
-                                                    <img src="./IMG/products/floating-top-table/2.jpg" class="d-block w-100" alt="Gallery thumbnail">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div class="gallery" onclick="toGallery()">
-                                                <a href="./IMG/products/floating-top-table/3.jpg" class="gallery-item rounded-3" data-sub-html='<h6 class="fs-sm text-light"></h6>'>
-                                                    <img src="./IMG/products/floating-top-table/3.jpg" class="d-block w-100" alt="Gallery thumbnail">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div class="gallery" onclick="toGallery()">
-                                                <a href="./IMG/products/floating-top-table/4.jpg" class="gallery-item rounded-3" data-sub-html='<h6 class="fs-sm text-light"></h6>'>
-                                                    <img src="./IMG/products/floating-top-table/4.jpg" class="d-block w-100" alt="Gallery thumbnail">
-                                                </a>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- Product details-->
                             <div class="col-lg-5 col-md-6 pt-4 pt-lg-0">
                                 <div class="product-details ms-auto pb-3">
-                                    <div class="mb-3"><span class="h3 fw-normal text-accent me-1">R$15.<small>99</small></span></div>
+                                    <div class="mb-3"><span class="h3 fw-normal text-accent me-1" id="product-price"></span></div>
                                     <form class="mb-grid-gutter">
                                         <div class="row mx-n2">
                                             <div class="col-6 px-2">
                                                 <div class="mb-3">
-                                                    <label class="form-label" for="tamanho">Tamanho:</label>
-                                                    <select class="form-select" id="tamanho">
-                                                        <option value="small">1800 x 850 x 730</option>
-                                                        <option value="medium">2100 x 850 x 730</option>
-                                                        <option value="large">2400 x 850 x 730</option>
+                                                    <label class="form-label" for="tamanhos">Tamanho:</label>
+                                                    <select class="form-select tamanhosSize" id="tamanhos">
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="col-6 px-2">
                                                 <div class="mb-3">
-                                                    <label class="form-label" for="tamanho">Madeira:</label>
-                                                    <select class="form-select" id="tamanho">
-                                                        <option value="carvalho">Carvalho</option>
-                                                        <option value="nogueira">Nogueira</option>
+                                                    <label class="form-label" for="madeiras">Madeira:</label>
+                                                    <select class="form-select" id="madeiras">
                                                     </select>
                                                 </div>
                                             </div>
@@ -587,15 +541,19 @@
                                                 <option value="4">4</option>
                                                 <option value="5">5</option>
                                             </select>
-                                            <button class="btn button-primary d-block w-100" type="submit" onclick="paraCarinho()"><i class="ci-cart fs-lg me-2"></i>Adicionar ao
-                                                carinho</button>
+                                            <button id="botaoCarinho" class="btn button-primary d-block w-100" type="submit">
+                                                <i class="ci-cart fs-lg me-2"></i>
+                                                Adicionar ao carinho
+                                            </button>
                                         </div>
+                                        <p id="alert">Produto adicionado ao carinho</p>
                                     </form>
+
                                     <h5 class="h6 mb-3 pb-3 border-bottom">
                                         <i class="ci-announcement text-muted fs-lg align-middle mt-n1 me-2"></i> Informação sobre o produto
                                     </h5>
 
-                                    <p class="item-texto">Pernas de forma quadrada sustentam a placa superior. Parece ser estável em proporções longas com pernas pesadas. É produzido como um jogo completo. </p>
+                                    <p class="item-texto"></p>
 
                                 </div>
                             </div>
@@ -619,7 +577,7 @@
         </div>
         <div class="footer-baixo">
             <hr>
-            <p>©2012 Rami Achcar </p>
+            <p>©2021 Rami Achcar </p>
         </div>
 
     </footer>
@@ -636,7 +594,10 @@
 <script src="./JS/theme/lg-zoom.min.js"></script>
 <!-- Theme -->
 <script src="./JS/theme/theme.js"></script>
-<!-- Main JS script -->
-<script src="./JS/products.js"></script>
+<!-- Productos JS script -->
+<script src="./JS/Model/productsClass.js"></script>
+<script src="./JS/View/products.js"></script>
+<script src="./JS/View/navbar.js"></script>
+
 
 </html>

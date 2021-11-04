@@ -5,7 +5,7 @@
     --tituloFontSize-md: 22px;
     --textBold: 700;
     --textSemiBold: 500;
-    --primaryColor: rgb(66, 66, 66);
-    --secondaryColor: rgb(160, 160, 159);
+    --primaryColor: #424242;
+    --secondaryColor: #A0A09F;
     --dangerColor: #E21C21;
 }

@@ -136,6 +136,12 @@
     display: inline-block !important;
 }
 
+#Badge {
+    background-color: transparent;
+    padding-top: 1px;
+    padding-left: 2px;
+}
+
 
 /* BreadCrumb */
 

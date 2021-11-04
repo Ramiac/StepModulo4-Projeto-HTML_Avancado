@@ -134,6 +134,12 @@ h2 {
 }
 
 .carousel-indicators [data-bs-target] {
-    width: 30%;
+    /* display: flex; */
+    width: 20%;
     height: auto;
+}
+
+#alert {
+    text-align: center;
+    color: var(--dangerColor);
 }
